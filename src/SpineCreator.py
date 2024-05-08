@@ -35,7 +35,7 @@ class SpineJntChain:
         mc.matchTransform(afterRootName,self.afterRoot)
         mc.orientConstraint(afterRootName,self.afterRoot)
 
-        spineParts = self.SpineParts - 2
+        spineParts = self.SpineParts - 1
         for x in range(spineParts):
             PartName = "ac_jnt_Spine_" + str(x + 2)
             mc.circle(n=PartName, nr=(1,0,0), r=20)
